@@ -1,7 +1,7 @@
 @charset "utf-8";
 
  /* use min-width to define styles that apply for screen widths greater than given width */
- @media screen and (min-width: 660px) {
+@media screen and (min-width: 660px) {
 	.desktop {
 		display: block;
 	}
@@ -10,7 +10,7 @@
 	}
  }
  /* use max-width to define styles that apply for screen widths lower than given width */
- @media screen and (max-width: 660px) {
+@media screen and (max-width: 660px) {
 	.desktop {
 		display: none;
 	}
@@ -263,3 +263,4 @@ table, th, td {
   min-height: 100%;
   z-index: -100;
 }
+
