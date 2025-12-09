@@ -18,7 +18,32 @@
 		display: block;
 	}
  }
- 
+/* Styles for screens smaller than 768px (e.g., mobile) */
+@media screen and (max-width: 767px) {
+    /* Apply mobile-specific styles here */
+    body {
+        font-size: 14px;
+    }
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+
+/* Styles for screens between 768px and 1024px (e.g., tablet) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Apply tablet-specific styles here */
+    .navigation {
+        display: none; /* Hide navigation on tablets */
+    }
+}
+
+/* Styles for screens larger than 1024px (e.g., desktop) */
+@media screen and (min-width: 1025px) {
+    /* Apply desktop-specific styles here */
+    .header {
+        padding: 20px;
+    }
+} 
 header {
 	background-color: #fff;
 	padding: 10px;
@@ -263,4 +288,5 @@ table, th, td {
   min-height: 100%;
   z-index: -100;
 }
+
 
